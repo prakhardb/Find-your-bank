@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
+import Routes from './Routes';
+import store from './redux/Store';
+import { createBrowserHistory } from 'history'
+import AllBanks from './Containers/AllBanks';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
   document.getElementById('root')
 );
 

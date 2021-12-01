@@ -1,0 +1,32 @@
+.all-banks-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 40px 60px 40px;
+
+  .bank-data-container {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .header-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: calc(100vw - 400px);
+      padding-top: 30px;
+
+      .filters-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .city-filter {
+          padding-right: 30px;
+        }
+
+        .category-filter {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}

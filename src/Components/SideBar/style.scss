@@ -1,0 +1,17 @@
+.side-bar-container {
+  min-width: 200px;
+  background: #001529;
+  color: #ffffff;
+  height: calc(100vh - 120px);
+  padding: 30px;
+  text-align: center;
+
+  .all-banks-wrapper {
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+
+  .favorites-wrapper {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+.bank-detail-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  .bank-details-wrapper {
+    position: absolute;
+    width: fit-content;
+    top: 30%;
+    left: 45%;
+    -webkit-box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
+    -moz-box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
+    box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
+    padding: 20px;
+  }
+
+  .favorite-icon {
+    right: 20px;
+    position: absolute;
+    top: 20px;
+  }
+}

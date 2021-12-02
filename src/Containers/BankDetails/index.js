@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React from 'react';
 import { StarOutlined, StarFilled, ArrowLeftOutlined } from '@ant-design/icons';
 import './style.scss';
 import { useDispatch, useSelector } from 'react-redux';

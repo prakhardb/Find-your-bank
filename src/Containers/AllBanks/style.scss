@@ -1,7 +1,12 @@
+#root {
+  overflow-y: hidden;
+}
+
 .all-banks-container {
   display: flex;
   flex-direction: row;
   padding: 0px 40px 60px 40px;
+  margin-top: 40px;
 
   .bank-data-container {
     padding-left: 40px;
@@ -11,8 +16,14 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
       width: calc(100vw - 400px);
       padding-top: 30px;
+
+      .header-text {
+        font-size: 24px;
+        font-weight: 700;
+      }
 
       .filters-wrapper {
         display: flex;
@@ -21,12 +32,45 @@
 
         .city-filter {
           padding-right: 30px;
+
+          select {
+            width: 250px;
+            height: 30px;
+            border-radius: 8px;
+          }
         }
 
         .category-filter {
           padding-right: 30px;
+
+          select {
+            width: 250px;
+            height: 30px;
+            border-radius: 8px;
+          }
+        }
+
+        .search-container {
+          input {
+            width: 250px;
+            height: 30px;
+            border-radius: 8px;
+          }
         }
       }
     }
   }
+}
+
+.banks-table-container {
+  margin-top: 30px;
+}
+
+.ant-table-body {
+  max-height: calc(100vh - 560px) !important;
+  min-height: calc(100vh - 560px) !important;
+}
+
+.ant-spin-spinning {
+  top: 25vh !important;
 }

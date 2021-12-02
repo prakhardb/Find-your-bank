@@ -11,6 +11,7 @@ function* fetchBankData(actions) { //fetching order details from leaf order hash
     });
     if (bankData && bankData.status && bankData?.data?.length) {
       yield put(saveBankData(bankData.data));
+      actions.data?.callback();
     } else {
       yield put(saveBankData([]));
     }

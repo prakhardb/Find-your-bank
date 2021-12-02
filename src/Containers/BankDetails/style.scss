@@ -7,16 +7,58 @@
     position: absolute;
     width: fit-content;
     top: 30%;
-    left: 45%;
+    left: 35vw;
     -webkit-box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
     -moz-box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
     box-shadow: 4px 4px 30px 3px rgba(212, 204, 212, 1);
-    padding: 20px;
+    padding: 20px 40px;
+
+    .detail-container {
+      margin-right: 10px;
+
+      .bank-name {
+        text-align: center;
+        margin-bottom: 15px;
+
+        .details {
+          font-size: 18px !important;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .favorite-icon {
     right: 20px;
     position: absolute;
-    top: 20px;
+    top: 25px;
   }
+
+  .header-container {
+    padding: 40px 120px;
+    border-bottom: 1px solid #f4f4f4 !important;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+
+      .back-text {
+        padding-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.details {
+  font-size: 14px;
 }
